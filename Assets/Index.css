@@ -1,0 +1,46 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 30px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 39px;
+}
+.logo span {
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 52px;
+}
+.menu h2 {
+    color: #3629B7;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.submenu {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.submenu img {
+    padding-right: 10px;
+}
+.submenu span {
+    font-size: 1.1rem;
+}
