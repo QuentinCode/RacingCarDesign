@@ -16,7 +16,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 .logo span {
     font-weight: 700;
@@ -32,15 +37,85 @@ nav {
     color: #3629B7;
     font-weight: 100;
     padding-bottom: 20px;
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
 }
 .submenu {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
+    color: #838383;
 }
 .submenu img {
-    padding-right: 10px;
+    padding-right: 15px;
 }
 .submenu span {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+.submenu span:hover {
+    color: #591AED;
+}
+.schedule {
+    padding-left: 52px;
+    padding-top: 20px;
+}
+.schedule h2 {
+    color: #3629B7;
+    font-weight: 100;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
+}
+.races {
+    position: relative;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.rond1, .rond2, .rond3 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    /* border: 2px solid green; */
+}
+.rond1 {
+    border: 1.8px solid #3F7EF8;
+}
+.rond2 {
+    border: 1.8px solid #FA6C6A;
+}
+.rond3 {
+    border: 1.8px solid #27C1B3;
+}
+.races p {
+    padding-left: 30px;
+    font-size: 0.8rem;
+    color: #838383;
+    cursor: pointer;
+}
+.races p:hover {
+    color: #591AED;
+}
+.profile {
+    margin-top: 30px;
+    margin-left: 42px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: #F9FAFF;
+    border-radius: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s;
+}
+.profile:hover {
+    background-color: #e7e7e7;
+}
+.profile span {
+    color: #591AED;
 }
