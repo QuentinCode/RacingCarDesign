@@ -188,4 +188,109 @@ form {
 .contact img:nth-child(3) {
     border-radius: 50%;
 }
+/******************************** Cards *******************************/
 
+#cards {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 240px;
+    padding-top: 35px;
+    width: 90%;
+    margin: 0 auto;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    box-shadow: 1px 5px 13px -2px rgba(102, 97, 112, 0.208);
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card p {
+    font-size: 0.8rem;
+    color: #838383;
+    padding-top: 20px;
+}
+
+/************************************** Car *********************************/
+#car {
+    padding-left: 400px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-part {
+    position: relative;
+}
+
+.left-part::before {
+    content: "<";
+    font-size: 2rem;
+    color: #838383;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 5px 13px -2px rgba(102, 97, 112, 0.208);
+    cursor: pointer;
+}
+.left-part::after {
+    content: ">";
+    font-size: 2rem;
+    color: #838383;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 90px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 5px 13px -2px rgba(102, 97, 112, 0.208);
+    cursor: pointer;
+}
+.right-part-containers {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: -10px;
+}
+.right-part-containers .result {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: #838383;
+}
+.result p {
+    font-weight: bold;
+    color: black;
+}
+.right-part-containers img {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #eeeafe;
+    box-shadow: 1px 5px 13px -2px rgba(102, 97, 112, 0.208);
+}
+
+#graph {
+    padding-left: 380px;
+    margin: 0 auto;
+}
+#graph img {
+    width: 500px;
+}
