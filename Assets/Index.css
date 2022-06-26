@@ -205,6 +205,8 @@ form {
     justify-content: center;
     width: 90px;
     height: 90px;
+    opacity: 0;
+    /* visibility: hidden; */
     box-shadow: 1px 5px 13px -2px rgba(102, 97, 112, 0.208);
     border-radius: 10px;
     transition: all .3s;
@@ -228,11 +230,9 @@ form {
     justify-content: space-around;
     align-items: center;
 }
-
 .left-part {
     position: relative;
 }
-
 .left-part::before {
     content: "<";
     font-size: 2rem;
@@ -286,7 +286,6 @@ form {
     background-color: #eeeafe;
     box-shadow: 1px 5px 13px -2px rgba(102, 97, 112, 0.208);
 }
-
 #graph {
     padding-left: 380px;
     margin: 0 auto;
