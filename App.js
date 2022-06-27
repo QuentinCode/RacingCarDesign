@@ -1,11 +1,14 @@
-const cards = document.querySelectorAll('.card')
+const cards = document.getElementById("cards")
 
-window.addEventListener('load', initAnim)
+gsap.to(cards, {y: 50, duration: 2, stagger: 0.5})
+// gsap.from(cards, {opacity: 0, duration: 2, stagger: 2})
 
-function initAnim(){
+// window.addEventListener('load', initAnim)
+
+// function initAnim(){
     
-    const TLFADE = gsap.timeline();
+//     const TLFADE = gsap.timeline();
 
-    TFLADE
-    .to(title, {opacity: 1, delay: 0.2})
-}
+//     TLFADE
+//     .to(cards, {autoAlpha: 1, delay: 0.2})
+// }
